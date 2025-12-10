@@ -1,5 +1,8 @@
-	add_subdirectory(persons)
-	add_subdirectory(catalog)
-	
-	
-	
+	cmake_minimum_required(VERSION 3.10)
+
+	set(CMAKE_CXX_STANDARD 20)
+	set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+	project(p2)
+
+	add_subdirectory(src)

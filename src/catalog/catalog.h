@@ -3,6 +3,7 @@
 
 #include "../persons/persons.h"
 #include <vector>
+#include <string.h>
 
 
 
@@ -12,7 +13,7 @@ class CyclistCatalog{
             std::vector <Cyclist> cyclists_;
     
     public:
-            bool LoadCyclist (const std::string& path);
+            bool Load(const std::string& path);
             std::vector <Cyclist> Data() {return cyclists_;}
             std::size_t Size() {return Data().size();}
 
@@ -25,7 +26,7 @@ class DirectorCatalog{
                 std::vector <Director> directors_;
         
         public:
-                bool LoadDirector (const std::string& path);
+                bool Load(const std::string& path);
                 std::vector <Director>& Data() {return directors_;}
                 std::size_t Size() {return Data().size();}
 

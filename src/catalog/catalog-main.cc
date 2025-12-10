@@ -14,7 +14,7 @@ std::cout << "Carga de los archivos cyclists.csv y directors.csv: " << std::endl
 
 //Apartado para CYCLISTCATALOG
 
-    if(cc.LoadCyclist("../../../data/cyclists.csv") == false){
+    if(cc.Load("../../../data/cyclists.csv") == false){
 
         std::cout << "ERROR: no se pudo cargar el archivo de ciclistas" << std::endl;
         return 1;
@@ -24,7 +24,7 @@ std::cout << "Carga de los archivos cyclists.csv y directors.csv: " << std::endl
 
 //Apartado para DIRECTORCATALOG
 
-    if(dc.LoadDirector("../../../data/directors.csv") == false){
+    if(dc.Load("../../../data/directors.csv") == false){
 
         std::cout << "ERROR: no se pudo cargar el archivo de directores" << std::endl;
         return 1;
